@@ -20,8 +20,9 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
-
-
+  'GET /api/buscar': 'MilitanteController.BuscarCI',
+  'GET /api/militante/:id' : 'MilitanteController.getID',
+  'POST /api/militante/crear' : 'MilitanteController.crear'
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *
